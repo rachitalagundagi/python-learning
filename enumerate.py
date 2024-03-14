@@ -1,3 +1,5 @@
+# code to convert rachit to rAcHiT
+
 def myfunc(word):
     new_word= ''
     
@@ -9,4 +11,4 @@ def myfunc(word):
     print(new_word)
     return new_word
 
-print(myfunc("rachit"))         
+myfunc("rachit")         
