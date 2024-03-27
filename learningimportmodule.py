@@ -8,7 +8,7 @@
 
 
 # MODULES CAN BE IMPORTED AS SOME SMALL NAME SO YOU DONT HAVE TO TYPE BIG NAME EVERY TIME 
-# import modules_list as m 
+# import nmodules_list as m 
 # print(m.a)
 
 # print(m.area_of_square(3))
