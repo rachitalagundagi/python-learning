@@ -40,5 +40,28 @@ def noswap(list):
 a=[1,2,3,4,5,6]
 noswap(a)
 
-#=--------------------------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------------------------
+'''Check if element exists in list in Python
+Input: test_list = [1, 6, 3, 5, 3, 4]
+   3:  Check if 3 exist or not.
+Output: True
+Explanation: The output is True because the element we are looking is exist in the list.'''
+
+def check(numm):
+    count = 0
+    a = [1,6,3,5,3,4]
+    if numm in a:
+        b=a.count(numm)
+        print(f"number {numm} present {b} times")
+    else: print(f"number {numm} not present in {a}")    
+
+check(3)     
+check(88)       
+#-------------------------------------------------------------------------------------------------------
+'''reversing a list'''
+a=[1,2,3,4,5,6]
+print(a[::-1])
+
+print(list(reversed(a)))
+#----------------------------------------------------------------------------------------------
 
