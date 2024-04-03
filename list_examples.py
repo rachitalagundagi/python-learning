@@ -130,3 +130,22 @@
 # print("sum is ",sums)
 # print("avg is ", avg)
 #-------------------------------------------------------------------------------
+
+#code to print second larges number in a  list
+
+d= [1,33,445,56,4,4443]
+
+c= list(set(d)) #removing duplicates
+c.sort()
+print(c[-2])
+
+# or eleminate the max element and print the new max element
+e= [1,33,445,56,4,4443]
+
+newe= list(set(e)) #removing duplicates
+newe.remove(max(newe))
+print(max(newe))
+#-------------------------------------------------------------------------------------
+
+
+
