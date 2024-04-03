@@ -1,72 +1,50 @@
-# LISTS EVERYTHING TO KNOW
+# # LISTS EVERYTHING TO KNOW
 
-numbers = [10,0,-1,7,8,10,-67,0]
+# numbers = [10,0,-1,7,8,10,-67,0]
 
-# finding out lenght of list
-print(len(numbers))
+# # finding out lenght of list
+# print(len(numbers))
 
-# printing numbers in range using index
-print(numbers[0:2])
+# # printing numbers in range using index
+# print(numbers[0:2])
 
-print(numbers[0:])
+# print(numbers[0:])
 
-print(numbers[:6])
+# print(numbers[:6])
 
-print(numbers[0::2]) #print every 0::nth number or element
+# print(numbers[0::2]) #print every 0::nth number or element
 
-print(max(numbers))
+# print(max(numbers))
 
-#numbers = [10,0,-1,7,8,10,-67,0]
+# #numbers = [10,0,-1,7,8,10,-67,0]
 
-#add one element at end of list
-numbers.append(666)
-print(numbers)
-
-
-#add multiple elements to list
-numbers.extend([33,44,55])
-print(numbers)
-
-print(numbers[1:4]) #print range 
-
-#remove elements from list
-print("element removed is: ",numbers.pop(5))
-print(numbers)
-
-print(numbers.count(0)) #count how many times number is repeated 
-
-# REMOVE MULTIPLE ELEMENTS FROM LIST
-del numbers[1:3]
-print(numbers)
-
-#for removing with conditons can do using list_name.remove() function
-list1 = [0,2,3,4,5,6,7,8]
-for num in list1:
-    if num%2==0:
-        list1.remove(num)
-print(list1)        
+# #add one element at end of list
+# numbers.append(666)
+# print(numbers)
 
 
+# #add multiple elements to list
+# numbers.extend([33,44,55])
+# print(numbers)
 
+# print(numbers[1:4]) #print range 
 
+# #remove elements from list
+# print("element removed is: ",numbers.pop(5))
+# print(numbers)
 
+# print(numbers.count(0)) #count how many times number is repeated 
 
+# # REMOVE MULTIPLE ELEMENTS FROM LIST
+# del numbers[1:3]
+# print(numbers)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# #for removing with conditons can do using list_name.remove() function
+# list1 = [0,2,3,4,5,6,7,8]
+# for num in list1:
+#     if num%2==0:
+#         list1.remove(num)
+# print(list1)        
 
 # # LIST CODING EXAMPLES
 
@@ -135,3 +113,20 @@ print(list1)
 # print(list(reversed(a)))
 # #----------------------------------------------------------------------------------------------
 
+# find sum and avg of elements in the list
+
+# a = [1,2,3,4,5]
+# sum=0
+# for num in a:
+#     sum += num
+# print(sum)
+# avg= sum/len(a)
+# print(avg)    
+
+# #   or
+
+# sums= sum(a)
+# avg= sums/len(a)
+# print("sum is ",sums)
+# print("avg is ", avg)
+#-------------------------------------------------------------------------------
