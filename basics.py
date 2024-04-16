@@ -73,18 +73,71 @@ In case of an Armstrong number of 3 digits, the sum of cubes of each digit is eq
 22= 2*2 + 2*2 , 22!= 8 so 22 is not armstrong number 
 '''
 
-x = 153
-y = len(str(x))
+# x = int(input("enter a number"))
+# y = len(str(x))
+
+# temp = x
+# sum=0
+# while temp>0:
+#     digit=temp%10
+#     sum+=digit**y
+#     temp=temp//10
+
+# if sum==x:
+#     print("armstrong")
+# else:
+#     print("not armstrong")        
+
+
+
+
+
+
+# a = int(input("enter  a number: "))
+
+# b = len(str(a))
+# s=0
+# temp =a 
+# while(temp>0):
+#     digit= temp%10
+#     c= digit**b
+#     s+=c
+#     temp//=10
+# if a == s:
+#     print("a")
+# else:
+#     print("na")    
+
+#----------------------------------------------------------------
+
+# STRONG NUMBER 
+'''i/p no = sum of factorial of individual digits'''
+
+x= int(input("please enter a number: "))
 
 temp = x
-sum=0
-while temp>0:
-    digit=temp%10
-    sum+=digit**y
-    temp=temp//10
+sum= 0
 
+while (temp>0):
+    digit=temp%10
+    fact=1
+    for i in range(1,digit):
+        fact*=i+1
+    sum+=fact
+    print(sum)
+    temp//=10
 if sum==x:
-    print("armstrong")
+    print("strong")
 else:
-    print("not armstrong")        
+    print("not strong")        
+
+
+
+
+
+
+
+
+
+
 
