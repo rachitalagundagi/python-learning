@@ -57,8 +57,8 @@ print(len(phone_nos))
 #.update() method
 
 def mergedict(a,b):
-    c=(b.update(a))
-    return c
+    b.update(a)
+    return b
 
 dict1 = {'a': 10, 'b': 8}
 dict2 = {'d': 6, 'c': 4}
