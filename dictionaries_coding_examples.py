@@ -77,14 +77,13 @@
 '''CODE TO MERGE TWO DICTIONARIES'''
 
 def mergedict(a,b):
-    c=(b.update(a))
-    return c
+    b.update(a)
+    print(b)
 
 dict1 = {'a': 10, 'b': 8}
 dict2 = {'d': 6, 'c': 4}
 
-print(mergedict(dict1,dict2))
-
+mergedict(dict1,dict2)
 
 def merged(a,b):
     merged_dict={**a,**b}
@@ -102,3 +101,17 @@ marks.update(internal_marks)
 
 
 print(marks)
+
+#-----------------------------------------------------------------
+
+'''INSERT A NEW ELEMENT AT THE BEGINNING OF A DICT'''
+
+mark = {"english": 90,
+         "kannada":80,
+         "hindi":88
+}
+
+scienceMark = {"science": 99}
+
+scienceMark.update(mark)
+print(scienceMark)
