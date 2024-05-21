@@ -84,16 +84,66 @@ class LinkedList:
 
 
 
+# my_linked_list = LinkedList(11)
+# my_linked_list.append(3)
+# my_linked_list.append(23)
+# my_linked_list.append(7)
+#
+# my_linked_list.print_list()
+#
+# my_linked_list.set_value(1,4)
+#
+# print('after set')
+# my_linked_list.print_list()
+
+
+#to insert value/node in linked list
+    def insert(self, index, value):
+        if index < 0 or index >= self.length:
+            return False
+        if index == 0:
+            return self.prepend(value)
+        if index == self.length:
+            return self.append(value)
+        new_node = Node(value)
+        temp = self.get(index-1)
+        new_node.next= temp.next
+        temp.next = new_node
+        self.length += 1
+        return True
+
+# my_linked_list = LinkedList(11)
+# my_linked_list.append(3)
+#
+# my_linked_list.print_list()
+# my_linked_list.insert(1,55)
+#
+# my_linked_list.print_list()
+
+
+
+# REMOVE A NODE FROM LL
+    def remove(self,index):
+        if index< 0 or index>=self.length:
+            return None
+        if index ==0:
+            return self.pop_first()
+        if index == self.length-1:
+            return self.pop()
+        prev = self.get(index-1)
+        temp = prev.next
+        prev.next = temp.next
+        temp.next = None
+        self.length-=1
+        return temp # WHY???? THIS STEP WHYYYYYY<>??????????????????????
+
 my_linked_list = LinkedList(11)
 my_linked_list.append(3)
-my_linked_list.append(23)
-my_linked_list.append(7)
-
+my_linked_list.append(5)
+my_linked_list.append(6)
 my_linked_list.print_list()
-
-my_linked_list.set_value(1,4)
-
-print('after set')
+print("after removing")
+my_linked_list.remove(1)
 my_linked_list.print_list()
 
 
